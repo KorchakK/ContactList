@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// Второй экран не успел доделать...
 class DoubleTableViewController: UITableViewController {
     
     private let persons = Person.getPersons()
