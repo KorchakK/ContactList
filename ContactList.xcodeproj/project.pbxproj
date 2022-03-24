@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4457B0CD27EBAC9700474245 /* DoubleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457B0CC27EBAC9700474245 /* DoubleTableViewController.swift */; };
+		4486613F27EBEA57006FE9F6 /* PrepariedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486613E27EBEA57006FE9F6 /* PrepariedViewController.swift */; };
 		44A47A4D27EB80FA000E3DAC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A47A4C27EB80FA000E3DAC /* MainTableViewController.swift */; };
 		44A47A4F27EB9DAA000E3DAC /* DetailContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A47A4E27EB9DAA000E3DAC /* DetailContactViewController.swift */; };
 		44DAE56227EB5F2400850A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAE56127EB5F2400850A6C /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		4457B0CC27EBAC9700474245 /* DoubleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTableViewController.swift; sourceTree = "<group>"; };
+		4486613E27EBEA57006FE9F6 /* PrepariedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepariedViewController.swift; sourceTree = "<group>"; };
 		44A47A4C27EB80FA000E3DAC /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		44A47A4E27EB9DAA000E3DAC /* DetailContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactViewController.swift; sourceTree = "<group>"; };
 		44DAE55E27EB5F2300850A6C /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				44A47A4C27EB80FA000E3DAC /* MainTableViewController.swift */,
 				44A47A4E27EB9DAA000E3DAC /* DetailContactViewController.swift */,
 				4457B0CC27EBAC9700474245 /* DoubleTableViewController.swift */,
+				4486613E27EBEA57006FE9F6 /* PrepariedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				44DAE58027EB6A9000850A6C /* Person.swift in Sources */,
 				44DAE57E27EB619E00850A6C /* DataManager.swift in Sources */,
 				44DAE56227EB5F2400850A6C /* AppDelegate.swift in Sources */,
+				4486613F27EBEA57006FE9F6 /* PrepariedViewController.swift in Sources */,
 				44A47A4D27EB80FA000E3DAC /* MainTableViewController.swift in Sources */,
 				44A47A4F27EB9DAA000E3DAC /* DetailContactViewController.swift in Sources */,
 				4457B0CD27EBAC9700474245 /* DoubleTableViewController.swift in Sources */,
