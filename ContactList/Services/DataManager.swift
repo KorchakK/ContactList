@@ -6,7 +6,10 @@
 //
 
 class DataManager {
-    var names = [
+    
+    static let shared = DataManager()
+    
+    let names = [
         "Konstantin",
         "Mikhail",
         "Anton",
@@ -24,7 +27,7 @@ class DataManager {
         "Nikolay"
     ]
     
-    var surnames = [
+    let surnames = [
         "Korchak",
         "Pavlyutkina",
         "Poluyahton",
@@ -42,7 +45,7 @@ class DataManager {
         "Savelyev"
     ]
     
-    var phoneNumbers = [
+    let phoneNumbers = [
         "12421442354",
         "54353452352",
         "45325234234",
@@ -60,7 +63,7 @@ class DataManager {
         "13498235872"
     ]
     
-    var emails = [
+    let emails = [
         "qwrrq@apple.com",
         "kohn@apple.com",
         "olaeww@apple.com",
@@ -77,4 +80,7 @@ class DataManager {
         "kowefb@yandex.ru",
         "pilwe@mail.ru"
     ]
+    
+    private init() {}
+    
 }

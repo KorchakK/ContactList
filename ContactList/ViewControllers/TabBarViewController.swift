@@ -2,19 +2,24 @@
 //  TabBarViewController.swift
 //  ContactList
 //
-//  Created by Konstantin Korchak on 24.03.2022.
+//  Created by Konstantin Korchak on 26.03.2022.
 //
 
 import UIKit
 
-class TabBarViewController {
-    
-    private let persons = Person.getPersons()
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let settingVC = segue.destination as? SettingViewController else { return }
-        settingVC.delegate = self
-        settingVC.mainScreenColor = view.backgroundColor
+class TabBarViewController: UITabBarController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        controllersSetup()
     }
-    
+ 
+    private func controllersSetup() {
+        guard let mainVC = viewControllers?.first as? MainTableViewController else { return }
+        guard let doubleVC = viewControllers?.last as? DoubleTableViewController else { return }
+        
+        let persons = Person.getPersons()
+        mainVC.persons = persons
+        doubleVC.persons = persons
+    }
 }

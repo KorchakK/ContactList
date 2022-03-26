@@ -15,22 +15,22 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let personsData = DataManager()
+        let personsData = DataManager.shared
         
-        personsData.names.shuffle()
-        personsData.surnames.shuffle()
-        personsData.phoneNumbers.shuffle()
-        personsData.emails.shuffle()
+        let names = personsData.names.shuffled()
+        let surnames = personsData.surnames.shuffled()
+        let phones = personsData.phoneNumbers.shuffled()
+        let emails = personsData.emails.shuffled()
         
-        while !personsData.names.isEmpty {
+        for n in 0...(names.count - 1) {
             persons.append(Person(
-                name: personsData.names.removeFirst(),
-                surname: personsData.surnames.removeFirst(),
-                phoneNumber: personsData.phoneNumbers.removeFirst(),
-                email: personsData.emails.removeFirst()
-            )
+                name: names[n],
+                surname: surnames[n],
+                phoneNumber: phones[n],
+                email: emails[n])
             )
         }
+        
         return persons
     }
 }
