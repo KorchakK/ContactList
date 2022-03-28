@@ -25,6 +25,7 @@ class MainTableViewController: UITableViewController {
         content.text = "\(person.name) \(person.surname)"
         
         cell.contentConfiguration = content
+        
 
         return cell
     }
